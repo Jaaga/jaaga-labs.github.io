@@ -1,11 +1,11 @@
 <!doctype html>
-<html>
+<html class="has-navbar-fixed-top">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<title>Jaaga Labs</title>
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/league.css">
+		<link rel="stylesheet" href="css/theme/white.css">
 		<link rel="stylesheet" href="css/bulma.css">
 		<link rel="shortcut icon" href="/img/favicon.png">
 		<!-- Theme used for syntax highlighting of code -->
@@ -26,67 +26,44 @@
 				top: 0;
 				z-index: 0;
 			}
-			.is-nav {
-				background-color: #52575c;
-			}
 			.is-front {
 				z-index: 1;
-			}
-			.is-white {
-				color: #fff;
 			}
 			.reveal section img {
 				border: 0px;
 				box-shadow: none;
 			}
 		</style>
-		<div class="container">
-			<nav class="navbar is-nav is-front">
-				<div class="navbar-brand">
-					<a class="navbar-item is-white" href="#start">/</a>
-					<a class="navbar-item is-white" href="#products">/products</a>
-					<a class="navbar-item is-white" href="#services">/services</a>
-					<a class="navbar-item is-white" href="#team">/team</a>
-				</div>
-				<div class="navbar-burger is-white" data-target="navMenu">
-				  <span></span>
-				  <span></span>
-				  <span></span>
-				</div>
-				<div class="navbar-menu" id="navMenu">
-					<div class="navbar-end">
-						<a class="navbar-item is-white" href="mailto:labs@jaaga.in">labs@jaaga.in</a>
-						<a class="navbar-item is-white" href="http://jaaga.in" target="_blank"><img src="/img/favicon.png"/></a>
-					</div>
-				</div>
-			</nav>
-		</div>
-		<div class="is-front">
-			
-		</div>
+		<nav class="navbar is-fixed-top is-transparent is-front">
+		  <div class="navbar-brand">
+		    <a class="navbar-item" href="#start">/</a>
+		    <a class="navbar-item" href="#products">products</a>
+		    <a class="navbar-item" href="#services">services</a>
+		    <a class="navbar-item" href="#team">team</a>
+		    <div class="navbar-burger" data-target="navMenu">
+		      <span></span>
+		      <span></span>
+		      <span></span>
+		    </div>
+		  </div>
+		  <div class="navbar-menu" id="navMenu">
+		  	<div class="navbar-end">
+			  	<a class="navbar-item" href="mailto:labs@jaaga.in">labs@jaaga.in</a>
+			  	<a class="navbar-item" href="http://jaaga.in" target="_blank"><img src="/img/favicon.png"/></a>
+		  	</div>
+		  </div>
+		</nav>
 		<div class="reveal is-reveal">
 			<div class="slides">
 				<section>
 					<section data-markdown id="start">
 						<textarea data-template>
 						## Jaaga Labs
-
 						A Better Way to Build Products
 						
 						![Jaaga Labs](/img/brandmark.png)
 						</textarea>
 					</section>
-					<!-- <section data-markdown>
-						<textarea data-template>
-						## Beliefs
-						<h3 class="fragment">
-							Need > Idea > Technology
-						</h3>
-						<h3 class="fragment">
-							Intuition + Experiments = Better Intuition
-						</h3>
-						</textarea>
-					</section> -->
 				</section>
 				<section>
 					<section data-markdown id="products">
@@ -98,22 +75,25 @@
 					<section data-markdown data-autoslide="10000">
 						<textarea data-template>
 						### Smarter, Modular Weight Sensing
-						#### [Learn More](/demo.html)
+						#### [Learn More](mailto:labs@jaaga.in)
 						</textarea>
 					</section>
 					<section data-markdown data-autoslide="10000">
 						<textarea data-template>
-						### Small RFID Tags That Read Far
+						### Small RFID Systems That Read Far
+						#### [Learn More](mailto:labs@jaaga.in)
 						</textarea>
 					</section>
 					<section data-markdown data-autoslide="10000">
 						<textarea data-template>
 						### Discover People and Skills To Work Better
+						#### [Learn More](mailto:labs@jaaga.in)
 						</textarea>
 					</section>
 					<section data-markdown data-autoslide="10000">
 						<textarea data-template>
 						### Greet, Engage and Track Presence with AI
+						#### [Learn More](mailto:labs@jaaga.in)
 						</textarea>
 					</section>
 				</section>
@@ -127,11 +107,13 @@
 					<section data-markdown data-autoslide="10000">
 						<textarea data-template>
 						### Web and Mobile App Development
+						#### [Learn More](mailto:labs@jaaga.in)
 						</textarea>
 					</section>
 					<section data-markdown data-autoslide="10000">
 						<textarea data-template>
 						### Internet of Things
+						#### [Learn More](mailto:labs@jaaga.in)
 						</textarea>
 					</section>
 				</section>
@@ -181,31 +163,24 @@
 			});
 		</script>
 		<script async type="text/javascript ">
-		  document.addEventListener('DOMContentLoaded', function () {
-
-		    // Get all "navbar-burger " elements
-		    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-		    // Check if there are any nav burgers
-		    if ($navbarBurgers.length > 0) {
-
-		    // Add a click event on each of them
-		    $navbarBurgers.forEach(function ($el) {
-		    $el.addEventListener('click', function () {
-
-		    // Get the target from the "data-target " attribute
-		    var target = $el.dataset.target;
-		    var $target = document.getElementById(target);
-
-		    // Toggle the class on both the "navbar-burger " and the "navbar-menu "
-		    $el.classList.toggle('is-active');
-		    $target.classList.toggle('is-active');
-
-		    });
-		    });
-		    }
-
-		  });
+		document.addEventListener('DOMContentLoaded', function () {
+		// Get all "navbar-burger " elements
+		var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+		// Check if there are any nav burgers
+		if ($navbarBurgers.length > 0) {
+		// Add a click event on each of them
+		$navbarBurgers.forEach(function ($el) {
+		$el.addEventListener('click', function () {
+		// Get the target from the "data-target " attribute
+		var target = $el.dataset.target;
+		var $target = document.getElementById(target);
+		// Toggle the class on both the "navbar-burger " and the "navbar-menu "
+		$el.classList.toggle('is-active');
+		$target.classList.toggle('is-active');
+		});
+		});
+		}
+		});
 		</script>
 	</body>
 </html>
