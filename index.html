@@ -32,7 +32,7 @@
 			.is-front {
 				z-index: 1;
 			}
-			.is-nav a {
+			.is-white {
 				color: #fff;
 			}
 			.reveal section img {
@@ -40,13 +40,13 @@
 				box-shadow: none;
 			}
 		</style>
-		<div class="container level">
-			<nav class="navbar level-item is-nav is-front">
+		<div class="container">
+			<nav class="navbar is-nav is-front">
 				<div class="navbar-brand">
-					<a class="navbar-item" href="#start">/</a>
-					<a class="navbar-item" href="#products">/products</a>
-					<a class="navbar-item" href="#services">/services</a>
-					<a class="navbar-item" href="#team">/team</a>
+					<a class="navbar-item is-white" href="#start">/</a>
+					<a class="navbar-item is-white" href="#products">/products</a>
+					<a class="navbar-item is-white" href="#services">/services</a>
+					<a class="navbar-item is-white" href="#team">/team</a>
 				</div>
 				<div class="navbar-burger is-white" data-target="navMenu">
 				  <span></span>
@@ -55,8 +55,8 @@
 				</div>
 				<div class="navbar-menu" id="navMenu">
 					<div class="navbar-end">
-						<a class="navbar-item" href="mailto:labs@jaaga.in">labs@jaaga.in</a>
-						<a class="navbar-item" href="http://jaaga.in" target="_blank"><img src="/img/favicon.png"/></a>
+						<a class="navbar-item is-white" href="mailto:labs@jaaga.in">labs@jaaga.in</a>
+						<a class="navbar-item is-white" href="http://jaaga.in" target="_blank"><img src="/img/favicon.png"/></a>
 					</div>
 				</div>
 			</nav>
@@ -200,7 +200,6 @@
 		    // Toggle the class on both the "navbar-burger " and the "navbar-menu "
 		    $el.classList.toggle('is-active');
 		    $target.classList.toggle('is-active');
-		    $target.classList.add('is-jaaga-red');
 
 		    });
 		    });
