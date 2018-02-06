@@ -3,17 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
 		<title>Jaaga Labs</title>
-
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/league.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+		<link rel="stylesheet" href="css/bulma.css">
+		<link rel="shortcut icon" href="/img/favicon.png">
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
-
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -31,8 +27,10 @@
 				z-index: 0;
 			}
 			.is-nav {
-				z-index: 1;
 				background-color: #52575c;
+			}
+			.is-front {
+				z-index: 1;
 			}
 			.is-nav a {
 				color: #fff;
@@ -42,128 +40,138 @@
 				box-shadow: none;
 			}
 		</style>
-	  <div class="container level">
-	    <nav class="navbar level-item is-nav">
-	      <div class="navbar-brand">
-	        <a class="navbar-item" href="#products">Products</a>
-	        <a class="navbar-item" href="#services">Services</a>
-	        <a class="navbar-item" href="#team">Team</a>
-	      </div>
-	    </nav>
-	  </div>
-	  <p style="text-align: center; color: #666; z-index: 2">Jaaga Labs is a <a href="http://jaaga.in" target="_blank">Jaaga</a> initiative</p>
-
+		<div class="container level">
+			<nav class="navbar level-item is-nav is-front">
+				<div class="navbar-brand">
+					<a class="navbar-item" href="#start">/</a>
+					<a class="navbar-item" href="#products">/products</a>
+					<a class="navbar-item" href="#services">/services</a>
+					<a class="navbar-item" href="#team">/team</a>
+				</div>
+				<div class="navbar-burger is-white" data-target="navMenu">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				</div>
+				<div class="navbar-menu" id="navMenu">
+					<div class="navbar-end">
+						<a class="navbar-item" href="mailto:labs@jaaga.in">labs@jaaga.in</a>
+						<a class="navbar-item" href="http://jaaga.in" target="_blank"><img src="/img/favicon.png"/></a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="is-front">
+			
+		</div>
 		<div class="reveal is-reveal">
 			<div class="slides">
 				<section>
-					<section data-markdown>
+					<section data-markdown id="start">
 						<textarea data-template>
-							## Jaaga Labs
+						## Jaaga Labs
 
-							A Better Way to Build Products
-
-							![Jaaga Labs](/img/brandmark.png)
+						A Better Way to Build Products
+						
+						![Jaaga Labs](/img/brandmark.png)
 						</textarea>
 					</section>
-					<section data-markdown>
+					<!-- <section data-markdown>
 						<textarea data-template>
-							## Beliefs
-							<br/>
-
-							### 1. Need > Idea > Technology
-
-							<br/>
-
-							### 2. Intuition + Experiments = Better Intuition
+						## Beliefs
+						<h3 class="fragment">
+							Need > Idea > Technology
+						</h3>
+						<h3 class="fragment">
+							Intuition + Experiments = Better Intuition
+						</h3>
 						</textarea>
-					</section>
+					</section> -->
 				</section>
 				<section>
 					<section data-markdown id="products">
 						<textarea data-template>
-							## Products
-
-							### Less is More
+						## Products
+						### _Less is More_
 						</textarea>
 					</section>
-					<section data-markdown>
+					<section data-markdown data-autoslide="10000">
 						<textarea data-template>
-							### Smarter, Modular Weight Sensing
-
-							#### [Learn More](/demo.html)
+						### Smarter, Modular Weight Sensing
+						#### [Learn More](/demo.html)
 						</textarea>
 					</section>
-					<section data-markdown>
+					<section data-markdown data-autoslide="10000">
 						<textarea data-template>
-							### Small RFID Tags That Read Far
+						### Small RFID Tags That Read Far
 						</textarea>
 					</section>
-					<section data-markdown>
+					<section data-markdown data-autoslide="10000">
 						<textarea data-template>
-							### Discover People and Skills To Work Better
+						### Discover People and Skills To Work Better
 						</textarea>
 					</section>
-					<section data-markdown>
+					<section data-markdown data-autoslide="10000">
 						<textarea data-template>
-							### Greet, Engage and Track Presence with AI
+						### Greet, Engage and Track Presence with AI
 						</textarea>
 					</section>
 				</section>
 				<section>
 					<section data-markdown id="services">
 						<textarea data-template>
-							## Services
-
-							### Frugal is Better
+						## Services
+						### _Frugal is Better_
 						</textarea>
 					</section>
-					<section data-markdown>
+					<section data-markdown data-autoslide="10000">
 						<textarea data-template>
-							### Web and Mobile App Development
+						### Web and Mobile App Development
 						</textarea>
 					</section>
-					<section data-markdown>
+					<section data-markdown data-autoslide="10000">
 						<textarea data-template>
-							### Internet of Things
+						### Internet of Things
 						</textarea>
 					</section>
 				</section>
 				<section>
 					<section data-markdown id="team">
 						<textarea data-template>
-							## Team
+						## Team
+						### _Intuition Through Experiments_
 						</textarea>
 					</section>
-					<section data-markdown>
+					<section data-markdown data-autoslide="20000">
 						<textarea data-template>
-							### Core
-
-							<br/>
-
-							### Collaborators
+						### Core
+						<br/>
+						### Collaborators
 						</textarea>
 					</section>
-					<section data-markdown>
+					<section data-markdown data-autoslide="20000">
 						<textarea data-template>
-							### Clients
+						### Clients
 						</textarea>
 					</section>
 				</section>
 			</div>
 		</div>
-
-
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
 		<script>
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
-				autoSlide: 4000,
+				autoSlide: 5000,
 				loop: true,
 				autoSlideMethod: Reveal.navigateNext,
+				controlsTutorial: true,
+				slideNumber: true,
+				history: false,
+				viewDistance: 3,
+				transition: 'convex',
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
@@ -171,6 +179,34 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
+		</script>
+		<script async type="text/javascript ">
+		  document.addEventListener('DOMContentLoaded', function () {
+
+		    // Get all "navbar-burger " elements
+		    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+		    // Check if there are any nav burgers
+		    if ($navbarBurgers.length > 0) {
+
+		    // Add a click event on each of them
+		    $navbarBurgers.forEach(function ($el) {
+		    $el.addEventListener('click', function () {
+
+		    // Get the target from the "data-target " attribute
+		    var target = $el.dataset.target;
+		    var $target = document.getElementById(target);
+
+		    // Toggle the class on both the "navbar-burger " and the "navbar-menu "
+		    $el.classList.toggle('is-active');
+		    $target.classList.toggle('is-active');
+		    $target.classList.add('is-jaaga-red');
+
+		    });
+		    });
+		    }
+
+		  });
 		</script>
 	</body>
 </html>
