@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html  class="has-navbar-fixed-top" lang="{{ page.lang | default: site.lang | default: " en " }}">
+
+{% include head.html %}
+
+<body>
+  <style type="text/css">
+    .is-reveal {
+      position: fixed;
+      top: 0;
+      z-index: 0;
+    }
+    .is-front {
+      z-index: 1;
+    }
+    .reveal section img {
+      border: 0px;
+      box-shadow: none;
+    }
+    .has-small-images img {
+      width: 160px !important;
+    }
+  </style>
+
+  {% include header.html %}
+  <br/>
+  <div class="reveal is-reveal">
+      <div class="slides">
+        {{ content }}
+      </div>
+  </div>
+  <script src="/assets/lib/js/head.min.js"></script>
+    <script src="/assets/js/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        autoSlide: 4000,
+        loop: true,
+        autoSlideMethod: Reveal.navigateNext,
+        controlsTutorial: false,
+        controlsLayout: 'edges',
+        controlsBackArrows: 'hidden',
+        slideNumber: false,
+        history: false,
+        progress: false,
+        viewDistance: 3,
+        transition: 'convex',
+        dependencies: [
+          { src: '/assets/plugin/markdown/marked.js' },
+          { src: '/assets/plugin/markdown/markdown.js' },
+          { src: '/assets/plugin/notes/notes.js', async: true },
+          { src: '/assets/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+    <script async type="text/javascript ">
+      document.addEventListener('DOMContentLoaded', function () {
+      // Get all "navbar-burger " elements
+        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        // Check if there are any nav burgers
+        if ($navbarBurgers.length > 0) {
+          // Add a click event on each of them
+          $navbarBurgers.forEach(function ($el) {
+            $el.addEventListener('click', function () {
+              // Get the target from the "data-target " attribute
+              var target = $el.dataset.target;
+              var $target = document.getElementById(target);
+              // Toggle the class on both the "navbar-burger " and the "navbar-menu "
+              $el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+            });
+          });
+        }
+      });
+    </script>
+</body>
+
+</html>
