@@ -19,6 +19,19 @@
     .reveal section img, .reveal section img:hover{
       border: 0px;
       box-shadow: none;
+      margin: 0px;
+    }
+    .is-jaaga-red {
+      color: #F05023;
+    }
+    .is-jaaga-blue {
+      color: #164A91;
+    }
+    .has-white-bg {
+      background-color: #fff;
+    }
+    .is-semi-transparent {
+      background-color: rgba(255,255,255,0.5);
     }
   </style>
 
@@ -33,11 +46,12 @@
     <script src="/assets/js/reveal.js"></script>
     <script>
       Reveal.initialize({
+        center: true,
         autoSlide: 4000,
         loop: true,
         autoSlideMethod: Reveal.navigateNext,
         controlsTutorial: false,
-        controlsLayout: 'edges',
+        // controlsLayout: 'edges',
         controlsBackArrows: 'hidden',
         slideNumber: false,
         history: false,
